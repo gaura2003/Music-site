@@ -196,7 +196,7 @@ function showPage() {
 }
 </script>
              
-    <?php include  '../pages/includes/footer.php'; ?>
+    <?php include  '../pages/includes/sticky footer.php'; ?>
 </body>
 <script src="../js/script.js"></script>
 </html>
