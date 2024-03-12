@@ -73,7 +73,7 @@ footer .icon span {
 
 </body>
 <script>
-
+  
 function navigate(destination) {
     switch(destination) {
         case 'home':
@@ -92,6 +92,7 @@ function navigate(destination) {
             console.log("Invalid destination");
     }
 }
+
 
 </script>
 </html>

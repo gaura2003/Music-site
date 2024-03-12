@@ -8,15 +8,8 @@ echo '<html>
         <div class="header-div">
             <div class="main-title">
                 Web Music App
-            </div>
-             <div class="footer-div">
-            <form action="">
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Search for Music " name="find" id="">
-                    <button class="btn">Search</button>                
-                </div>
-            </form>
-        </div>            
+            </div>    
+                                                  
            </header>
   </body>  
 </html>

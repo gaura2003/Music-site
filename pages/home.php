@@ -48,11 +48,23 @@
             </ul>
         </div>
     </nav>   
+    
+    <div class="footer-div">
+            <form action="">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Search for Music " name="find" id="">
+                    <button class="btn">Search</button>                
+                </div>
+            </form>
+        </div>  
+        
      <section>
         <img class="banner" src="../images/guitar bg.jpg" alt="">
     </section>
     <div class="section-tilte">Artists</div>
+    
  <?php include  '../pages/artist added.php'; ?> 
+ 
      <div class="section-tilte">Featured</div>
          
 <div class="container">
@@ -104,11 +116,17 @@
                 <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"></path>
             </svg>
         </button>
-        <button onclick="togglePlayPause()">
-            <svg width="44" height="44" viewBox="0 0 24 24">
-                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
-            </svg>
-        </button>
+             
+        <button id="playPauseBtn" onclick="togglePlayPause()">
+    <svg id="pauseIcon" width="44" height="44" viewBox="0 0 24 24">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+    </svg>
+    <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+  <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+</svg>
+</button>
+
+
         <button onclick="nextSong()">
           <svg width="44" height="44" viewBox="0 0 24 24">
     <path d="M14 12l-8.5-6v12zm-1.5 6h2V6h-2z"></path>
@@ -127,6 +145,22 @@
     let currentSongIndex = 0;
     let songs = [];
 
+let playIcon = document.getElementById('playIcon');
+
+ let pauseIcon = document.getElementById('pauseIcon');
+
+function togglePlayPause() {
+    if (musicPlayer.paused) {
+        musicPlayer.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline-block';
+    } else {
+        musicPlayer.pause();
+        playIcon.style.display = 'inline-block';
+        pauseIcon.style.display = 'none';
+    }
+}
+
     function openMusicPlayerDrawer(title, artist, filePath, imagePath) {
         musicTitle.textContent = title + ' - ' + artist;
         musicImage.src = imagePath;
@@ -139,15 +173,7 @@
     function closeMusicPlayerDrawer() {
         musicPlayer.pause();
         musicPlayerDrawer.classList.remove('active');
-    }
-
-    function togglePlayPause() {
-        if (musicPlayer.paused) {
-            musicPlayer.play();
-        } else {
-            musicPlayer.pause();
-        }
-    }
+    }  
 
     function nextSong() {
         currentSongIndex = (currentSongIndex + 1) % songs.length;

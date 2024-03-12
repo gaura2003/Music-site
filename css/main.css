@@ -60,6 +60,7 @@ h1 {
         white-space: nowrap;
         display: flex;
         padding: 20px;
+        margin-bottom: 100px;
     }
     .music-card {
         width: 150px;
@@ -143,3 +144,20 @@ h1 {
     transition: all .5s ease;
 }
 
+/* Add this CSS to your existing stylesheet or create a new one */
+#playPauseBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the SVG icons */
+#playIcon,
+#pauseIcon {
+    fill: #000; /* Change the color as needed */
+}
+
+/* Hide the pause icon by default */
+#playIcon {
+    display: none;
+}
