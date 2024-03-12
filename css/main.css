@@ -52,25 +52,7 @@ h1 {
   color: #fff;
 }
 
-#captchaSolve {
-  background-color: #ff7f50;
-}
-
-#captchaCompetition {
-  background-color: #6495ed;
-}
-
-#referralLink {
-  background-color: #ff69b4;
-}
-
-#referralCount {
-  background-color: #32cd32;
-}
-
-#redeem {
-  background-color: #ff4500;
-}    
+  
    
     .container {
         max-width: 100%;
