@@ -110,6 +110,7 @@
         <img id="musicImage" src="" alt="Music Image">
         <h5 id="musicTitle"></h5>
     </div>
+    <center>
     <div class="music-controls">
         <button onclick="previousSong()">
             <svg width="44" height="44" viewBox="0 0 24 24">
@@ -126,13 +127,13 @@
 </svg>
 </button>
 
-
         <button onclick="nextSong()">
           <svg width="44" height="44" viewBox="0 0 24 24">
     <path d="M14 12l-8.5-6v12zm-1.5 6h2V6h-2z"></path>
 </svg>
         </button>
     </div>
+    </center>
 </div>
 
 <script>
