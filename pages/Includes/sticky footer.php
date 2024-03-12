@@ -73,11 +73,24 @@ footer .icon span {
 
 </body>
 <script>
-  // script.js
+
 function navigate(destination) {
-    // Add navigation functionality here
-    console.log("Navigating to:", destination);
-    // You can add code here to redirect to different pages or perform other actions based on the destination
+    switch(destination) {
+        case 'home':
+            window.location.href = 'home.php';
+            break;
+        case 'search':
+            window.location.href = 'search.php';
+            break;
+        case 'library':
+            window.location.href = 'library.php';
+            break;
+        case 'profile':
+            window.location.href = 'profile.php';
+            break;
+        default:
+            console.log("Invalid destination");
+    }
 }
 
 </script>
