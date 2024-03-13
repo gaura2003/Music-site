@@ -84,7 +84,7 @@ $conn->close();
   <h2><?php echo $artist['name']; ?></h2>
   <img src="<?php echo $artist['image']; ?>" alt="<?php echo $artist['name']; ?>">
   <p><?php echo $artist['bio']; ?></p>
-  <a href="index.php">Back to Artists List</a>
+  <a href="home.php">Back to Artists List</a>
 </div>
 
 </body>

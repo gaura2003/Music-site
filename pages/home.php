@@ -52,11 +52,7 @@
     <div class="footer-div">
             <form method="GET" action="search.php">
                 <div class="form-group">
-<<<<<<< HEAD
-                    <input class="form-control" type="text" name="search" placeholder="Search for Music " name="find" id="">
-=======
-                    <input class="form-control" type="text" placeholder="Search for Music " name="search" id="">
->>>>>>> 065728c7458194d0cc630a66237567cfdf7171b4
+                    <input class="form-control" type="text" name="search" placeholder="Search for Music "  id="search">
                     <button type="submit" class="btn">Search</button>                
                 </div>
             </form>
