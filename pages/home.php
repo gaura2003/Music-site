@@ -50,10 +50,10 @@
     </nav>   
     
     <div class="footer-div">
-            <form action="">
+            <form method="GET" action="search.php">
                 <div class="form-group">
                     <input class="form-control" type="text" placeholder="Search for Music " name="find" id="">
-                    <button class="btn">Search</button>                
+                    <button type="submit" class="btn">Search</button>                
                 </div>
             </form>
         </div>  
