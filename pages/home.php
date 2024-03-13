@@ -52,7 +52,7 @@
     <div class="footer-div">
             <form method="GET" action="search.php">
                 <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Search for Music " name="find" id="">
+                    <input class="form-control" type="text" name="search" placeholder="Search for Music " name="find" id="">
                     <button type="submit" class="btn">Search</button>                
                 </div>
             </form>
